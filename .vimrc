@@ -32,7 +32,7 @@ set notimeout ttimeout ttimeoutlen=200
 set pastetoggle=<F11>
 set wrap
 set textwidth=79
-set colorcolumn=85                      "a dark red indicator line
+set colorcolumn=80                      "an indicator line
 set shiftwidth=4
 set softtabstop=4
 set expandtab
@@ -51,10 +51,6 @@ set nowb
 "insert some handy shortcuts
 "quick saves
 :map <C-z> :w <Enter>
-"copy/cut/paste
-:map <C-c> y
-:map <C-v> p
-:map <C-x> x
 "tabs
 :map <C-t> :tabnew <Enter>
 :map <C-a> gt
@@ -72,4 +68,4 @@ let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 colorscheme solarized
 
-export TERM="xterm-256color"
+"export TERM="xterm-256color"
