@@ -64,4 +64,12 @@ set nowb
 "indentation
 :map <C-i> >>
 
-colorscheme desert
+"colorscheme desert
+set background=dark
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+colorscheme solarized
+
+export TERM="xterm-256color"
