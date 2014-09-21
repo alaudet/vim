@@ -8,6 +8,9 @@ nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 filetype indent plugin on
 syntax on
+" using Source Code Pro
+set anti enc=utf-8
+set guifont=Source\ Code\ Pro\ Bold\ 11
 set hidden
 set wildmenu
 set showcmd
