@@ -10,7 +10,7 @@ filetype indent plugin on
 syntax on
 " using Source Code Pro
 set anti enc=utf-8
-set guifont=Source\ Code\ Pro\ Bold\ 11
+set guifont=Source\ Code\ Pro\ 11
 set hidden
 set wildmenu
 set showcmd
@@ -30,7 +30,7 @@ set t_vb=
 set mouse=a
 set cmdheight=2
 set number                              "line numbering
-set relativenumber                      "line number relative to current line
+"set relativenumber                      "line number relative to current line
 set notimeout ttimeout ttimeoutlen=200
 set pastetoggle=<F11>
 set wrap
@@ -41,6 +41,7 @@ set softtabstop=4
 set expandtab
 set lines=55 columns=100
 map Y y$
+nnoremap <F5> :GundoToggle<CR>          "Gundo
 nnoremap <C-L> :nohl<CR><C-L>
 nnoremap ; :
 "turn trailing whitespace on
