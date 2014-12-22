@@ -10,7 +10,7 @@ filetype indent plugin on
 syntax on
 " using Source Code Pro
 set anti enc=utf-8
-set guifont=Source\ Code\ Pro\ 11
+set guifont=Source\ Code\ Pro\ 9
 set hidden
 set wildmenu
 set showcmd
