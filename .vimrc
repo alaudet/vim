@@ -6,8 +6,13 @@ execute pathogen#helptags()
 let mapleader=","                       "change leader to , because \ hard
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+map <leader>n :NERDTreeToggle<CR>
 filetype indent plugin on
 syntax on
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+nmap <leader>a <Esc>:ack
 " using Source Code Pro
 set anti enc=utf-8
 set guifont=Source\ Code\ Pro\ 9
@@ -40,6 +45,8 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set lines=55 columns=100
+set foldmethod=indent
+set foldlevel=99
 map Y y$
 nnoremap <F5> :GundoToggle<CR>          "Gundo
 nnoremap <C-L> :nohl<CR><C-L>
@@ -71,5 +78,3 @@ let g:solarized_termcolors=256
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 colorscheme solarized
-
-"export TERM="xterm-256color"
